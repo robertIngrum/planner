@@ -1,0 +1,62 @@
+#content {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-top: 2em;
+}
+
+#tabs {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: #444;
+	border-bottom: 2px solid #666;
+}
+
+.tab {
+	display: inline-block;
+	margin: 0;
+	padding: .5em 1em;
+	background-color: #666;
+	border: 1px solid #777;
+	border-top-left-radius: .5em;
+	border-top-right-radius: .5em;
+	text-decoration: none;
+	color: #eedfee;
+}
+
+.tab.selected {
+	background-color: #777;
+	border: 1px solid #555;
+}
+
+#timeline {
+	height: 100%;
+	width: 100%;
+	background-color: #111;
+}
+
+#timeline_name {
+	display: block;
+	width: 100%;
+	color: #ccc;
+	margin: 0;
+	padding: 1em .5em;
+}
+
+.todo[data-priority='0'],
+.todo[data-priority='0.0'],
+.todo[data-priority='.0'] { background-color: #aaffaa }
+.todo[data-priority='.1'] { background-color: #b2f7aa }
+.todo[data-priority='.2'] { background-color: #baefaa }
+.todo[data-priority='.3'] { background-color: #c2e7aa }
+.todo[data-priority='.4'] { background-color: #cadfaa }
+.todo[data-priority='.5'] { background-color: #d2d7aa }
+.todo[data-priority='.6'] { background-color: #dacfaa }
+.todo[data-priority='.7'] { background-color: #e2c7aa }
+.todo[data-priority='.8'] { background-color: #eabfaa }
+.todo[data-priority='.9'] { background-color: #f2b7aa }
+.todo[data-priority='1'],
+.todo[data-priority='1.0'] { background-color: #faafaa }
