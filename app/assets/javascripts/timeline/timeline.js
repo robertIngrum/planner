@@ -16,16 +16,16 @@ Timeline.prototype.load = function() {
   this.start = false;
   this.end = false;
   this.items.todos.push({
-    name: 'Awesome thing to do',
+    name: 'Important thing to do',
     description: 'Do this thing and it has this priority because it\'s a todo.',
     created: 0,
     archived: false,
     start: 0,
     end: false,
-    priority: '.0'
+    priority: '.9'
   });
   this.items.todos.push({
-    name: 'Awesome thing to do number 2',
+    name: 'Less important thing to do2',
     description: 'Do this thing and it has this priority because it\'s a todo.',
     created: 0,
     archived: false,

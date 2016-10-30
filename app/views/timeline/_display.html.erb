@@ -1,0 +1,7 @@
+<%- begin %>
+    <%- timeline = timelines.first %>
+    <div id="timeline" data-timeline-id="<%= timeline.id %>">
+      <h2 id="timeline_name"><%= timeline.name %></h2>
+      <div id="timeline_items"></div>
+    </div>
+<%- end %>

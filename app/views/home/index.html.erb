@@ -1,20 +1,2 @@
-<section id="content">
-  <div id="tabs">
-    <%- timelines.each_with_index do |timeline, index| %>
-
-      <a class="tab <%= index == 0 ? 'selected' : '' %>"
-         href="#"
-         data-timeline-id="<%= timeline.id %>">
-        <%= timeline.name %>
-      </a>
-
-    <%- end %>
-  </div>
-  <%- begin %>
-    <%- timeline = timelines.first %>
-    <div id="timeline" data-timeline-id="<%= timeline.id %>">
-      <h2 id="timeline_name"><%= timeline.name %></h2>
-      <div id="timeline_items"></div>
-    </div>
-  <%- end %>
-</section>
+<%= render 'timeline/tabs', timelines: timelines %>
+<%= render 'timeline/display', timelines: timelines %>

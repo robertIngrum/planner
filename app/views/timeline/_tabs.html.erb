@@ -1,0 +1,11 @@
+<div id="tabs">
+  <%- timelines.each_with_index do |timeline, index| %>
+
+      <a class="tab <%= index == 0 ? 'selected' : '' %>"
+         href="#"
+         data-timeline-id="<%= timeline.id %>">
+        <%= timeline.name %>
+      </a>
+
+  <%- end %>
+</div>
