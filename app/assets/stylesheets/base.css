@@ -12,16 +12,16 @@ body {
 	width: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #444;
+	background-color: #111;
 	font-family: Arial, sans-serif;
 }
 
-#header, #content {
-	position: relative;
-	width: 100%;
-}
+#header, #content { position: relative; }
 
-#header { padding: 1em .5em; }
+#header {
+	padding: 1em .5em;
+	background-color: #444;
+}
 
 #header > h1 {
 	margin: 0;
